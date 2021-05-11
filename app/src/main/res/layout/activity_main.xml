@@ -7,65 +7,79 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="414dp"
-        android:layout_height="149dp"
-        android:background="#8B00FF21"
+    <ScrollView
+        android:layout_width="415dp"
+        android:layout_height="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="114dp"
-            android:layout_height="52dp"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="HOME"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#FF0000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.149" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.0">
 
 
-
-    <ScrollView
-        android:layout_width="404dp"
-        android:layout_height="569dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="411dp"
+                android:layout_height="102dp"
+                android:background="#8B00FF21">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="114dp"
+                    android:layout_height="52dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="HOME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.149" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="83dp"
+                android:layout_width="96dp"
                 android:layout_height="41dp"
                 android:layout_marginStart="160dp"
                 android:layout_marginLeft="160dp"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="News"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#FDF1FF0F"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintVertical_bias="0.025" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -78,6 +92,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="-170dp"
+                    android:paddingRight="-160dp"
                     app:srcCompat="@drawable/koukoku4" />
 
                 <ImageView
@@ -85,8 +101,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="-280dp"
+                    android:paddingRight="-250dp"
                     app:srcCompat="@drawable/koukoku2" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="-280dp"
+                    android:paddingRight="-250dp"
+                    app:srcCompat="@drawable/koukoku3" />
+
             </LinearLayout>
+            </HorizontalScrollView>
 
             <View
                 android:id="@+id/view1"
@@ -120,8 +149,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:paddingLeft="-330dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/s312" />
 
                     <ImageView
@@ -129,16 +158,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:paddingLeft="-300dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/s311" />
 
                     <ImageView
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="-300dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/in_sagano" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -175,8 +204,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:paddingLeft="-330dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/s312" />
 
                     <ImageView
@@ -184,16 +213,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:paddingLeft="-300dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/s311" />
 
                     <ImageView
                         android:id="@+id/imageView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="-300dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/sagano" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -231,16 +260,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:paddingLeft="-330dp"
-                        android:paddingRight="-330dp"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
                         app:srcCompat="@drawable/tosyo" />
-
 
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
 
         </LinearLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

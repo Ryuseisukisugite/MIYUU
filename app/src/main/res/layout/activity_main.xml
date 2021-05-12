@@ -7,7 +7,7 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
-    
+
     <ScrollView
         android:layout_width="415dp"
         android:layout_height="731dp"
@@ -45,6 +45,17 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.149" />
+
+                <SearchView
+                    android:layout_width="288dp"
+                    android:layout_height="28dp"
+                    android:background="#FFFFFF"
+                    android:queryHint="検索"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:layout_constraintVertical_bias="0.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <View
@@ -95,7 +106,7 @@
                     android:layout_weight="1"
                     android:paddingLeft="-170dp"
                     android:paddingRight="-160dp"
-                    app:srcCompat="@drawable/koukoku4" />
+                    app:srcCompat="@drawable/koukoku3" />
 
                 <ImageView
                     android:id="@+id/imageView3"

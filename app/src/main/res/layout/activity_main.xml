@@ -157,47 +157,38 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:onClick="goTos312"
-                        android:paddingLeft="-410dp"
-                        android:paddingRight="-410dp"
-                        app:srcCompat="@drawable/s312" />
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingLeft="-410dp"
-                        android:paddingRight="-410dp"
-                        app:srcCompat="@drawable/s312" />
-
-                    <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
                         app:srcCompat="@drawable/s311" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="-410dp"
-                        android:paddingRight="-410dp"
-                        app:srcCompat="@drawable/in_sagano" />
 
                     <ImageButton
                         android:id="@+id/imageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
                         app:srcCompat="@drawable/s312" />
+
+                    <ImageButton
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
+                        app:srcCompat="@drawable/in_sagano" />
+
+
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -215,7 +206,7 @@
                 android:layout_height="42dp"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Recture rooms"
+                android:text="Lecture rooms"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="#FFFFFF" />
 
@@ -229,30 +220,40 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingLeft="-410dp"
-                        android:paddingRight="-410dp"
-                        app:srcCompat="@drawable/s312" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/imageView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
+                        android:onClick="goTos311"
                         app:srcCompat="@drawable/s311" />
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
+                        android:onClick="goTos312"
+                        app:srcCompat="@drawable/s312" />
+
+                    <ImageButton
                         android:id="@+id/imageView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
+                        android:onClick="goTosagano"
                         app:srcCompat="@drawable/sagano" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -271,7 +272,7 @@
                 android:layout_height="42dp"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Librarys"
+                android:text="Library"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="#FFFFFF" />
 
@@ -285,13 +286,16 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/imageView10"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        android:background="#0000"
+                        android:onClick="goTolibrary"
                         app:srcCompat="@drawable/tosyo" />
 
                 </LinearLayout>

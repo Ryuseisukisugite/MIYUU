@@ -17,24 +17,23 @@ import java.util.ArrayList;
 
 import static android.graphics.Color.DKGRAY;
 
-public class S312Activity extends AppCompatActivity {
+public class LibraryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_s312);
+        setContentView(R.layout.activity_library);
 
         drawPie();
     }
-
 
     public void drawPie()
     {
         AnimatedPieView mAnimatedPieView = findViewById(R.id.animatedPieView);
         AnimatedPieViewConfig config = new AnimatedPieViewConfig();
         config.startAngle(-90)// 起始角度偏移
-                .addData(new SimplePieInfo(50, Color.parseColor("#004E89"), "Title1"))
-                .addData(new SimplePieInfo(50.0f, Color.parseColor("#72ddf7"), "Title2")).drawText(true)
+                .addData(new SimplePieInfo(0, Color.parseColor("#004E89"), "Title1"))
+                .addData(new SimplePieInfo(100.0f, Color.parseColor("#72ddf7"), "Title2")).drawText(true)
                 .duration(2000).textSize(60);// 持续时间
 
 // 以下两句可以直接用 mAnimatedPieView.start(config); 解决，功能一致

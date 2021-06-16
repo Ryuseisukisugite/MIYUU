@@ -13,11 +13,9 @@
         android:layout_height="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
+        app:layout_constraintVertical_bias="1.0">
 
 
         <LinearLayout
@@ -89,45 +87,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="280dp">
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="407dp"
-                android:layout_height="284dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="-280dp"
-                    android:paddingRight="-250dp"
-                    app:srcCompat="@drawable/koukoku1" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="-280dp"
-                    android:paddingRight="-250dp"
-                    app:srcCompat="@drawable/koukoku2" />
-
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="-280dp"
-                    android:paddingRight="-250dp"
-                    app:srcCompat="@drawable/koukoku3" />
-
-            </LinearLayout>
-            </HorizontalScrollView>
+            <ViewFlipper android:id="@+id/flipper"
+                android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@+id/firstlayout" layout="@layout/first" />
+                <include android:id="@+id/secondlayout" layout="@layout/second" />
+                <include android:id="@+id/thirdlayout" layout="@layout/third" />
+            </ViewFlipper>
 
             <View
                 android:id="@+id/view1"
@@ -161,10 +127,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="#0000"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
                         app:srcCompat="@drawable/s311" />
 
                     <ImageButton
@@ -172,22 +138,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="#0000"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
                         app:srcCompat="@drawable/s312" />
 
                     <ImageButton
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#0000"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
                         app:srcCompat="@drawable/in_sagano" />
-
 
 
                 </LinearLayout>
@@ -226,11 +191,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTos311"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
-                        android:onClick="goTos311"
                         app:srcCompat="@drawable/s311" />
 
                     <ImageButton
@@ -238,22 +203,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTos312"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
-                        android:onClick="goTos312"
                         app:srcCompat="@drawable/s312" />
 
                     <ImageButton
                         android:id="@+id/imageView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#0000"
+                        android:onClick="goTosagano"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
-                        android:onClick="goTosagano"
                         app:srcCompat="@drawable/sagano" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -291,11 +256,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTolibrary"
                         android:paddingLeft="-410dp"
                         android:paddingRight="-410dp"
                         android:scaleType="centerInside"
-                        android:background="#0000"
-                        android:onClick="goTolibrary"
                         app:srcCompat="@drawable/tosyo" />
 
                 </LinearLayout>

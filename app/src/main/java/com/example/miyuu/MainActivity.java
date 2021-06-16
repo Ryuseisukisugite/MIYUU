@@ -5,13 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
+    private ViewFlipper viewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        viewFlipper = (ViewFlipper) findViewById(R.id.flipper);
+
+        viewFlipper.setAutoStart(true);     //自動でスライドショーを開始
+        viewFlipper.setFlipInterval(3000);  //更新間隔(ms単位)
+
     }
 
     public void goTos311(View view) {

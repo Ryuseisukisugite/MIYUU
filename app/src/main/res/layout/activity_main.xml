@@ -31,7 +31,7 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="114dp"
+                    android:layout_width="0dp"
                     android:layout_height="52dp"
                     android:fontFamily="sans-serif-black"
                     android:gravity="center_horizontal|center_vertical"
@@ -42,18 +42,21 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.149" />
+                    app:layout_constraintVertical_bias="0.2" />
 
                 <SearchView
-                    android:layout_width="288dp"
-                    android:layout_height="28dp"
+                    android:id="@+id/searchView"
+                    android:layout_width="283dp"
+                    android:layout_height="35dp"
                     android:background="#FFFFFF"
                     android:queryHint="検索"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.925" />
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <View
@@ -89,7 +92,8 @@
 
 
             <ViewFlipper android:id="@+id/flipper"
-                android:layout_width="fill_parent" android:layout_height="fill_parent">
+                android:layout_width="400dp"
+                android:layout_height="300dp">
                 <include android:id="@+id/firstlayout" layout="@layout/first" />
                 <include android:id="@+id/secondlayout" layout="@layout/second" />
                 <include android:id="@+id/thirdlayout" layout="@layout/third" />

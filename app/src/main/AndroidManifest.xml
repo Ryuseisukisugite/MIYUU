@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Miyuu">
-        <activity android:name=".LibraryActivity"></activity>
+        <activity
+            android:name=".testActivity"
+            android:label="@string/title_activity_test"></activity>
+        <activity android:name=".LibraryActivity" />
         <activity android:name=".SaganoActivity" />
         <activity android:name=".S311Activity" />
         <activity android:name=".S312Activity" />

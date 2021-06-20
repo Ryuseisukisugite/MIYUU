@@ -40,4 +40,9 @@ public class MainActivity extends AppCompatActivity {
         Intent tolibrary = new Intent(this, LibraryActivity.class);
         startActivity(tolibrary);
     }
+
+    public void goTotest(View view) {
+        Intent totest = new Intent(this, testActivity.class);
+        startActivity(totest);
+    }
 }

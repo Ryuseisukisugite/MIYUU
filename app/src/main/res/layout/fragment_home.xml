@@ -6,17 +6,281 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+
+    <ScrollView
+        android:layout_width="415dp"
+        android:layout_height="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view112"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="411dp"
+                android:layout_height="102dp"
+                android:background="#8B00FF21">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="HOME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2" />
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="283dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:queryHint="検索"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.925" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="96dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="News"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FDB3BD07"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ViewFlipper android:id="@+id/flipper"
+                android:layout_width="400dp"
+                android:layout_height="300dp">
+                <include android:id="@+id/firstlayout" layout="@layout/first" />
+                <include android:id="@+id/secondlayout" layout="@layout/second" />
+                <include android:id="@+id/thirdlayout" layout="@layout/third" />
+            </ViewFlipper>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="125dp"
+                android:layout_height="42dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Empty rooms"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s311" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s312" />
+
+                    <ImageButton
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0000"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/in_sagano" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="125dp"
+                android:layout_height="42dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Lecture rooms"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTos311"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s311" />
+
+                    <ImageButton
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTos312"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s312" />
+
+                    <ImageButton
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0000"
+                        android:onClick="goTosagano"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/sagano" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="125dp"
+                android:layout_height="42dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Library"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:onClick="goTolibrary"
+                        android:paddingLeft="-410dp"
+                        android:paddingRight="-410dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/tosyo" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

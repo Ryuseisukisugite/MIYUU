@@ -2,8 +2,10 @@ package com.example.miyuu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
@@ -39,5 +41,10 @@ public class S311Activity extends AppCompatActivity {
 // 以下两句可以直接用 mAnimatedPieView.start(config); 解决，功能一致
         mAnimatedPieView.applyConfig(config);
         mAnimatedPieView.start();
+    }
+
+    public void goTomain(View view) {
+        Intent tomain = new Intent(this, MainActivity.class);
+        startActivity(tomain);
     }
 }

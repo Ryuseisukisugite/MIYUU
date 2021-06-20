@@ -7,14 +7,356 @@
     tools:context=".S312Activity">
 
 
-    <com.razerdp.widget.animatedpieview.AnimatedPieView
-        android:id="@+id/animatedPieView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#000000"
+    <ScrollView
+        android:layout_width="415dp"
+        android:layout_height="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="411dp"
+                android:layout_height="102dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="S312"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="53dp"
+                    android:layout_height="39dp"
+                    android:background="#FFFFFF"
+                    android:onClick="goTomain"
+
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.94"
+                    app:srcCompat="@drawable/ie" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view112"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:paddingLeft="-320dp"
+                        android:paddingRight="-330dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s31111" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:paddingLeft="-330dp"
+                        android:paddingRight="-330dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s31111" />
+
+                    <ImageButton
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0000"
+                        android:paddingLeft="-330dp"
+                        android:paddingRight="-330dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/s31111" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="The occupancy rate of this room"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <com.razerdp.widget.animatedpieview.AnimatedPieView
+                android:id="@+id/animatedPieView"
+                android:layout_width="374dp"
+                android:layout_height="337dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="About this room"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="This room is usually used for sudents in the Faculty of Engineering. There are 3 screens so you can take the same lesson at the same time as the next classroom. After school, students are free to remain and study by themselves. Seats are not fixed, and each student sits freely every morning. The airconditioners are also managed, so you can study in a cool environment in the summer and a warm environment in the winter."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Room equipment"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <View
+                android:id="@+id/View5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="217dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Room capacity"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desks"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Monitors"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="White board"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+
+                        android:orientation="vertical"
+                        android:paddingRight="80dp">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="108"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="36"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView202"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
